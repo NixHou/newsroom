@@ -1,6 +1,9 @@
 <footer class="footer wrap pale">
   <p>&copy;&nbsp;<span class="year"></span>&nbsp;{{ site.Title }}</p>
-  <p class="attribution upcase">{{ safeHTML (T "recorded_by" site.Data.recorder) }}</p>
+  <p><a href="https://space.bilibili.com/6454144" target="_blank">bilibili</a>
+  &
+    <a href="https://www.instagram.com/nix.hou/" target="_blank">Instagram</a></p>
+  <p>Recorded by Nix</p>
 </footer>
 {{ $scriptPath := "js/index.js" }}
 {{ $scripts := resources.Get $scriptPath | resources.ExecuteAsTemplate $scriptPath . | resources.Minify | resources.Fingerprint "sha512" }}
