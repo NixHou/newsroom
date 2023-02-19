@@ -1,7 +1,6 @@
 {{- $normal := .Get 0 }}
-{{- $alt := .Get 1 }}
 {{- $normalPath := absURL (printf "images/%s" $normal) }}
 
-<picture class="nav_logo">
-  <img src="{{ $normalPath }}" alt="{{ $alt }}">
-</picture>
+<figure>
+  <img src="{{ $normalPath }}">
+</figure>
